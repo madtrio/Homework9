@@ -20,7 +20,7 @@ public class Main {
     }
 
     public static void installApp(int clientOS, int clientDeviceYear, int currentYear) {
-                if (clientOS == 1 && currentYear <= clientDeviceYear) {
+        if (clientOS == 1 && currentYear <= clientDeviceYear) {
             System.out.println("Установите версию приложения для Android по ссылке ниже");
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else if (clientOS == 1 && currentYear > clientDeviceYear) {
@@ -33,7 +33,7 @@ public class Main {
         }
     }
 
-    public static void deliveryTime (int i) {
+    public static void deliveryTime(int i) {
         if (i < 20) {
             System.out.println("Доставка займет сутки");
         } else if (i < 60) {
@@ -44,6 +44,7 @@ public class Main {
             System.out.println("Доставка в вашу зону не осущетствляется");
         }
     }
+
     public static void task1() {
         System.out.println("Task 1");
         int year = 2200;
@@ -62,7 +63,7 @@ public class Main {
     public static void task3() {
         System.out.println("Task 3");
         int deliveryDistance = 95;
-        deliveryTime (deliveryDistance);
+        deliveryTime(deliveryDistance);
     }
 
 }
