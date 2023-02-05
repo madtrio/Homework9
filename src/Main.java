@@ -33,7 +33,17 @@ public class Main {
         }
     }
 
-
+    public static void deliveryTime (int i) {
+        if (i < 20) {
+            System.out.println("Доставка займет сутки");
+        } else if (i < 60) {
+            System.out.println("Доставка займет двое суток");
+        } else if (i < 100) {
+            System.out.println("Доставка займет трое суток");
+        } else {
+            System.out.println("Доставка в вашу зону не осущетствляется");
+        }
+    }
     public static void task1() {
         System.out.println("Task 1");
         int year = 2200;
@@ -50,7 +60,9 @@ public class Main {
     }
 
     public static void task3() {
-
+        System.out.println("Task 3");
+        int deliveryDistance = 95;
+        deliveryTime (deliveryDistance);
     }
 
 }
