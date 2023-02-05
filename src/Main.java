@@ -19,6 +19,20 @@ public class Main {
         return year;
     }
 
+    public static void installApp(int clientOS, int clientDeviceYear, int currentYear) {
+                if (clientOS == 1 && currentYear <= clientDeviceYear) {
+            System.out.println("Установите версию приложения для Android по ссылке ниже");
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (clientOS == 1 && currentYear > clientDeviceYear) {
+            System.out.println("Установите версию приложения для Android по ссылке ниже");
+        } else if (clientOS == 0 && currentYear <= clientDeviceYear) {
+            System.out.println("Установите версию приложения для iOS по ссылке ниже");
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для iOS по ссылке ниже");
+        }
+    }
+
 
     public static void task1() {
         System.out.println("Task 1");
@@ -27,9 +41,12 @@ public class Main {
 
     }
 
-
     public static void task2() {
-
+        System.out.println("Task 2");
+        int clientOS = 1;
+        int clientDeviceYear = 2015;
+        int currentYear = 2023;
+        installApp(clientOS, clientDeviceYear, currentYear);
     }
 
     public static void task3() {
